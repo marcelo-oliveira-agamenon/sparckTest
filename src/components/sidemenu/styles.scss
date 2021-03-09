@@ -1,0 +1,51 @@
+@import "../../global/variables.scss";
+
+#sidemenu {
+  min-width: 250px;
+  background: $white;
+  height: fit-content;
+  padding: 15px 8px 0 8px;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  .ant-select {
+    min-width: 100%;
+  }
+
+  .menu {
+    padding: 0 15px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .selected {
+      h4 {
+        color: $third-color;
+      }
+
+      span {
+        color: $third-color;
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      h4 {
+        margin: 0;
+        margin-left: 20px;
+        color: $text-color;
+      }
+
+      span {
+        color: $text-color;
+      }
+    }
+  }
+}

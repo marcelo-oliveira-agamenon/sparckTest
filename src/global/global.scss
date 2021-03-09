@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-flow-smoothing: antialiased;
+  font-family: Roboto, sans-serif;
+}
+
+#root {
+  width: 100%;
+}
+
+.primary-btn {
+  background-color: $white;
+  color: $primary-color;
+  text-transform: uppercase;
+  border: 1px solid $primary-color;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.share-btn {
+  @extend .primary-btn;
+
+  background-color: none;
+  background-image: linear-gradient(to right, #80b1f0 8%, $third-color 30%);
+  color: $white;
+  border: none;
+}
+
+.normal-btn {
+  @extend .primary-btn;
+
+  background-color: $primary-color;
+  color: $white;
+}
